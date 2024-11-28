@@ -1,0 +1,22 @@
+Class controller for our components and website
+
+They will have methods/functions we can see them in ResourceMethods.png
+
+
+public function index(){
+    $jobs = [
+        'Wev Developer'
+    ]
+    We pass the location where is our component 'folder.file' and we pass our variable using compact()
+    return view('jobs.index', compact('jobs'))
+}
+
+
+Type Hinting:
+
+use Illuminate\View\View;
+
+We can use this to specify our return from our function 
+
+for example with the index function above we do:
+index(): View

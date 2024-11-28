@@ -1,0 +1,29 @@
+They are php short sintax.
+
+We can use:
+@forelse($jobs as $job)
+<li>{{$jon}}<li>
+@empty
+<li>No jobs<li>
+@endforesle
+
+
+Longer Version:
+@if(!empty($job))
+ul
+@foreach($jobs as $job)
+li
+{{$job}}
+li
+@endforeach
+ul
+@endforesle
+p 
+no jobs
+@endif
+
+
+/////
+@forelse incorporate foreach + if else 
+
+@empty is shortcut for if check

@@ -1,0 +1,11 @@
+In App View Components will have the Class for each component we will have.
+There we chose the place from where to render our components
+
+
+In App Htpp Controllers we will have each controller for out web-site and there we put our CRUD logic.
+
+
+In resourcesc views we will have our web-site components with the structure (Html, TailwindCss and more)
+
+
+In Routes we will have our Routes where we will call our Controllers

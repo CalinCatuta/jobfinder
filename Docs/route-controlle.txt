@@ -1,0 +1,11 @@
+
+After we create a controller class for our components we can use them in our Route
+
+In our Controller will have the methods for example (index, show, create, store ...)
+
+We use Route to create the Route
+We give the method we want to use ::get
+We give the route "/"
+We call use the HomeController class
+We specify the method we want from that class "index"
+Route::get('/', [HomeController::class, 'index']);

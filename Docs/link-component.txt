@@ -1,0 +1,36 @@
+To pass props we use @props()
+
+@props(['key' => value])
+
+To pass href links we use attributes.
+For conditional classes we use {{$key ? 'code' : ''}}
+
+<a {{$attributes}} {{$key ? 'code' : ''}}>
+For the content inside the element we use $slot
+{{$slot}}
+</a>
+
+We can send the url instead of complet href.
+
+@props(['url' => '/'])
+
+<a href="{{$url}}">
+
+</a>
+
+<x-component-name url="/jobs" >
+
+</x-nav-link>
+
+Usage of component
+
+href will be sent as an attribute and we use a special method for link named url('/location')
+
+We use (:) before the props because otherwise the value passed will by a string.
+What ever we put inside ="" will by read as a expresion not just a regular string
+
+request()->is('jobs') // is a method to find out if we are at URL with /jobs
+
+<x-component-name href="{{url('/')}}" :active="request()->is('jobs')">
+
+</x-nav-link>
